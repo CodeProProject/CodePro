@@ -1,10 +1,10 @@
 import React from 'react'
 
-import Header from './Components/Header/Header';
+import Navegacao from './Components/Navegacao/Navegacao';
 
 const App = () => {
   return (
-    <Header/>
+    <Navegacao/>
   )
 }
 
