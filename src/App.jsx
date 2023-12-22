@@ -1,11 +1,23 @@
-import React from 'react'
-
 import Navegacao from './Components/Navegacao/Navegacao';
 
-const App = () => {
+function App() {
   return (
-    <Navegacao/>
+    <>
+      <Navegacao />
+      
+      <header className="">
+
+      </header>
+
+      <main className="">
+
+      </main>
+
+      <footer className="">
+        
+      </footer>
+    </>
   )
 }
 
-export default App
+export default App;
