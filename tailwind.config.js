@@ -5,7 +5,11 @@ export default {
     "./src/**/*.{js,jsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        banner: 'url(assets/CodeBanner1.jpg)',
+      },
+    },
   },
   plugins: [],
 }
