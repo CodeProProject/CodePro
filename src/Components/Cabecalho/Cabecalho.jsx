@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Navegacao from './Components/Navegacao/Navegacao';
+import Navegacao from '../Navegacao/Navegacao';
 
 function Cabecalho() {
   return (
