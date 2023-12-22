@@ -8,11 +8,9 @@
 .navegacao-container {
     width: 100%;
     height: 80px;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
 }
 
 .nav-container {
@@ -20,7 +18,7 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    padding: 20px;
+    padding: 0 20px; 
 }
 
 .nav-container ul {
@@ -28,6 +26,7 @@
     align-items: center;
     justify-content: center;
     gap: 1em;
+    list-style-type: none; 
 }
 
 .nav-container > h1 {
@@ -39,9 +38,26 @@
 
 .nav-container > ul > li {
     color: white;
+    position: relative;
 }
 
 .nav-container > ul > li:hover {
     color: #E3E3E3;
     cursor: pointer;
+}
+
+.nav-container > ul > li::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    bottom: 0;
+    left: 50%; 
+    transform: translateX(-50%); 
+    transition: width 0.3s ease-in-out; 
+}
+
+.nav-container > ul > li:hover::after {
+    width: 100%;
 }
