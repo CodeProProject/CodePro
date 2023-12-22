@@ -3,6 +3,8 @@ import './Navegacao.css'
 
 const Navegacao = () => {
   return (
+    
+  
     <div className='navegacao-container'>
       <nav className='nav-container'>
         <h1>CodePro</h1>
@@ -13,6 +15,7 @@ const Navegacao = () => {
           <li className='li-contato'><a href="#">Contato</a></li>
         </ul>
       </nav>
+
     </div>
   )
 }

@@ -1,21 +1,9 @@
-import Navegacao from './Components/Navegacao/Navegacao';
+import Cabecalho from './Components/Cabecalho/Cabecalho';
 
 function App() {
   return (
     <>
-      <Navegacao />
-      
-      <header className="">
-
-      </header>
-
-      <main className="">
-
-      </main>
-
-      <footer className="">
-        
-      </footer>
+      <Cabecalho />
     </>
   )
 }
