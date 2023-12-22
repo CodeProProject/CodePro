@@ -1,10 +1,10 @@
 import React from 'react'
 
-import Navegacao from './Components/Navegacao/Navegacao';
+import Navegacao from '../Navegacao/Navegacao';
 
 function Cabecalho() {
   return (
-    <header className='w-full h-10 bg-slate-700'>
+    <header className='w-full h-20 bg-slate-700'>
 
       <Navegacao />
 

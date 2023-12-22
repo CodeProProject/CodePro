@@ -8,4 +8,4 @@ const Navegacao = () => {
   )
 }
 
-export default Navegacao
+export default Navegacao;
