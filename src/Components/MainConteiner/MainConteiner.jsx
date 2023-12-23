@@ -4,7 +4,7 @@ import Banner from '../Banner/Banner';
 
 const MainConteiner = () => {
   return (
-    <main className='w-full h-screen'>
+    <main className='w-full h-full'>
       <Banner />
     </main>
   )
