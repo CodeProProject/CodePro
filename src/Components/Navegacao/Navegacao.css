@@ -3,7 +3,9 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
 }
+
 
 .navegacao-container {
     width: 100%;
@@ -61,3 +63,5 @@
 .nav-container > ul > li:hover::after {
     width: 100%;
 }
+
+
