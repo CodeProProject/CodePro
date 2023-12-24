@@ -4,7 +4,7 @@ import Navegacao from '../Navegacao/Navegacao';
 
 function Cabecalho() {
   return (
-    <header className='w-full h-20 bg-slate-700 px-10'>
+    <header className='w-full h-[68px] bg-slate-700 px-10'>
 
       <Navegacao />
 
