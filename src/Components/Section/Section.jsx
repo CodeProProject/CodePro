@@ -2,16 +2,7 @@ import React from 'react'
 import "./Section.css";
 import designOtimizar from '../../assets/designOtimizar.png'
 
-//texto para por no diferencial 
-/*O Que Nos Diferencia:
 
-Personalização Excepcional: Cada projeto é único, e personalizamos nossas soluções para atender às necessidades específicas de cada cliente. Seja um site elegante, um aplicativo funcional ou uma combinação dos dois, nossa equipe se dedica a entregar resultados excepcionais.
-
-Tecnologia de Ponta: Ficamos à frente das últimas tendências tecnológicas para garantir que suas soluções digitais não apenas atendam aos padrões atuais, mas também estejam prontas para o futuro. Utilizamos as mais recentes ferramentas e frameworks para criar produtos robustos e de alto desempenho.
-
-Experiência do Usuário Aprimorada: Entendemos a importância da experiência do usuário. Criamos interfaces intuitivas e atraentes que não apenas impressionam visualmente, mas também proporcionam uma jornada fácil e envolvente para seus usuários.
-
-Compromisso com a Excelência: A excelência é a nossa norma. Buscamos constantemente aperfeiçoar nossas habilidades, processos e produtos para garantir que ofereçamos serviços que superem as expectativas. */
 
 const Section = () => {
   return (

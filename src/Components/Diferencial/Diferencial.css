@@ -1,0 +1,119 @@
+:root {
+    --corDiferencial:#334155; 
+}
+
+.diferencial-container {
+    height: 400px;
+    max-height: 600px;
+    width: 100%;
+    background-color: var(--corDiferencial);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    flex-direction: column;
+}
+
+.h1-diferencial-title {
+    font-weight: bold;
+    color: white;
+    font-size: 32px;
+}
+
+.cards-container-diferencial {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    max-height: 600px;
+    width: 100%;
+    gap: 2.5em;
+}
+
+/*CARD ONE */
+.card-one {
+    width: 30%;
+    max-width: 800px;
+    height: 280px;
+    max-height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.7em;
+}
+
+.card-one > span {
+    text-align: justify;
+    color: white;
+    font-weight: bold;
+}
+
+.monitor-img, .mobile-img, .alvo-img {
+    width: 100px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    filter: drop-shadow(5px 5px 5px #333333a4)
+}
+
+/*CARD ONE */
+
+/*-----------------------*/
+
+
+/*CARD TWO */
+
+.card-two {
+    width: 30%;
+    max-width: 800px;
+    height: 280px;
+    max-height: 350px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.7em;
+}
+
+.card-two > span {
+    color: white;
+    font-weight: bold;
+    text-align: justify;
+}
+
+
+/*CARD TWO */
+
+/*-----------------------*/
+
+
+/*CARD THREE */
+
+.card-three {
+    width: 30%;
+    max-width: 800px;
+    height: 280px;
+    max-height: 350px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.7em;
+}
+
+.card-three > span {
+    color: white;
+    font-weight: bold;
+    text-align: justify;
+}
+
+
+
+
+/*CARD THREE */
+
