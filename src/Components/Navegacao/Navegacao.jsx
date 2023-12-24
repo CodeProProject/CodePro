@@ -8,7 +8,7 @@ const Navegacao = () => {
         <h1>CodePro</h1>
         <ul>
           <li className='li-inicio'><a href="#">Início</a></li>
-          <li className='li-sobre'><a href="#">Sobre</a></li>
+          <li className='li-sobre'><a href="#sobre">Sobre</a></li>
           <li className='li-projeto'><a href="#">Projeto</a></li>
           <li className='li-contato'><a href="#">Contato</a></li>
         </ul>
