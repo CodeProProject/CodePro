@@ -7,8 +7,8 @@ function App() {
   return (
     <>
       <Cabecalho />
+      
       <MainConteiner />
-      <Section/>
       <Diferencial/>
     </>
   )
