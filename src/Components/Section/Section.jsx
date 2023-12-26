@@ -10,7 +10,7 @@ const Section = () => {
         </div>
 
         <div className='info-texto-container'>
-            <h1>Sobre</h1>
+            <h1 className='sobre-title'>Sobre</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam architecto explicabo dolorum nisi quae ratione eius quis quia rerum corrupti magnam necessitatibus in voluptatem nemo, earum inventore voluptatibus, itaque quod.</p>
         </div>
         

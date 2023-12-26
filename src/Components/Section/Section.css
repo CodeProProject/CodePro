@@ -1,4 +1,4 @@
-<<<<<<< Updated upstream
+
 * {
     margin: 0;
     padding: 0;
@@ -6,8 +6,6 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-=======
->>>>>>> Stashed changes
 :root {
     --corNavegacao: #334155;
 }
@@ -22,13 +20,9 @@
 }
 
 .container-sobre{
-<<<<<<< Updated upstream
-    height: 400px;
-    width: 40%;
-=======
+
     height: 50%;
     width: 30%;
->>>>>>> Stashed changes
 
     display: flex;
     align-items: center;
@@ -36,12 +30,8 @@
 }
 
 .designExperiencia {
-<<<<<<< Updated upstream
-    width: 400px;
-=======
     width: 100%;
     max-width: 330px;
->>>>>>> Stashed changes
     height: auto;
     animation: float 2s ease-in-out infinite;
     filter: drop-shadow(5px 5px 5px #333);
@@ -70,15 +60,11 @@
     color: rgb(80, 80, 80);
 }
 
-.info-texto-container > h1 {
-    font-size: 48px;
-    font-weight: bold;
+.sobre-title {
     color: var(--corNavegacao);
-<<<<<<< Updated upstream
+    font-weight: bold;
+    font-size: 40px;
     text-decoration: underline;
-=======
-    font-size: 20px;
-    text-align: justify;
 }
 
 .info-texto-container > p { 
@@ -138,5 +124,5 @@
     .info-texto-container > p { 
         font-size: 14px;
     }
->>>>>>> Stashed changes
+
 }
