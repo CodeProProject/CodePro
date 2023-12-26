@@ -1,0 +1,72 @@
+:root {
+    --corDiferencial:#334155; 
+}
+
+.diferencial-container {
+    height: 500px;
+    width: 100%;
+    background-color: var(--corDiferencial);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+.h1-diferencial-title {
+    font-weight: bold;
+    font-size: 28px;
+    color: white;
+}
+
+.cards-container-diferencial {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    width: 100%;
+    gap: 48px;
+}
+
+/*CARDS */
+
+.card {
+    width: 25%;
+    max-width: 500px;
+    height: 75%;
+    max-height: 350px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card:last-child {
+    width: 27%;
+}
+
+.card > span {
+    height: 50%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.99rem;
+    text-align: justify;
+    color: white;
+}
+
+.card-imagem {
+    height: 45%;
+}
+
+.monitor-img, .mobile-img, .alvo-img {
+    width: 100px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: drop-shadow(5px 5px 5px #333333a4);
+}
+
+.alvo-img {
+    width: 115px;
+}

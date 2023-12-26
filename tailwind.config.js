@@ -9,6 +9,10 @@ export default {
       backgroundImage: {
         banner: 'url(assets/CodeBanner1.jpg)',
       },
+      fontFamily: {
+        roboto: 'Roboto',
+        ptsans: 'PT Sans'
+      }
     },
   },
   plugins: [],
