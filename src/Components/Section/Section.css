@@ -48,9 +48,11 @@
     margin-bottom: 40px;
 }
 
-.info-texto-container p {
+.info-texto-container > p {
     font-weight: bold;
     color: rgb(80, 80, 80);
+    font-size: 18px;
+    margin-top: 10px;
 }
 
 .sobre-title {
