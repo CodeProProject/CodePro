@@ -5,9 +5,9 @@ const Banner = () => {
     <section className='w-full h-[600px] bg-banner bg-right bg-cover bg-fixed bg-no-repeat'>
 
       <div className='w-full h-full bg-black/60 flex flex-col items-center pt-44'>
-          <h1 className='text-white text-3xl font-ptsans'>Transformando ideias em Realidade Virtual</h1>
+          <h1 className='text-white font-bold text-center text-xl w-11/12 font-ptsans ssm:w-auto ssm:text-xl md:text-3xl'>Transformando ideias em Realidade Virtual</h1>
 
-          <p className='text-white text-lg font-ptsans'>Excelência em Desenvolvimento Web e Mobile para Aplicações Sofisticadas</p>
+          <p className='text-white font-ptsans w-11/12 text-base text-center ssm:w-auto md:text-lg '>Excelência em Desenvolvimento Web e Mobile para Aplicações Sofisticadas</p>
       </div>
 
     </section>

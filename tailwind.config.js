@@ -12,6 +12,9 @@ export default {
       fontFamily: {
         roboto: 'Roboto',
         ptsans: 'PT Sans'
+      },
+      screens: {
+        'ssm': '560px',
       }
     },
   },

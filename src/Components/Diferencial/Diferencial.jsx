@@ -8,7 +8,7 @@ import Alvo from '../../assets/alvo.png';
 
 const Diferencial = () => {
   return (
-    <div className='diferencial-container'>
+    <section className='diferencial-container'>
         <h1 className='h1-diferencial-title'>Diferencial da CodePro</h1>
         <div className='cards-container-diferencial'>
             <div className='card'>
@@ -32,7 +32,7 @@ const Diferencial = () => {
                 <span className='terceiro-span'>A excelência é a nossa norma. Buscamos constantemente aperfeiçoar nossas habilidades, processos e produtos para garantir que ofereçamos serviços que superem as expectativas.Entendemos a importância da experiência do usuário, e com isso, criamos interfaces intuitivas e atraentes!</span>
             </div>
         </div>
-    </div>
+    </section>
   )
 }
 

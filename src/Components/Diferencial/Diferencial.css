@@ -70,3 +70,28 @@
 .alvo-img {
     width: 115px;
 }
+
+
+@media (max-width: 900px) {
+    .diferencial-container {
+        height: max-content;
+        padding: 32px;
+        gap: 80px;
+    }
+
+    .cards-container-diferencial {
+        gap: 28px;
+        flex-direction: column;
+        height: max-content;
+        gap: 72px;
+    }
+
+    .card {
+        width: 95%;
+        gap: 32px;
+    }
+
+    .card:last-child {
+        width: 95%;
+    }
+}
