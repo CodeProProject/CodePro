@@ -28,54 +28,58 @@ const Contato = () => {
             <h1 className='h1-title-form'>Entre em contato</h1>
             <div className='formulario'>
                 <div className='form-nome'>
-                    <FormLabel className='label-nome' display="inline-block" >Nome completo</FormLabel>
+                    <FormLabel 
+                        className='label-nome' 
+                        display="inline-block"
+                        marginBottom='2px'
+                    >
+                        Nome completo
+                    </FormLabel>
+
                     <Input 
-                    bg="#d7e1f0" 
-                    align="center" 
-                    justify="center" 
-                    w="60%" 
-                    type='text'
-                    placeholder='Digite seu nome'
-                    value={nome}
-                    onChange={(e)=> {setNome(e.target.value)}}
+                        bg="#d7e1f0"
+                        w="100%" 
+                        type='text'
+                        placeholder='Digite seu nome'
+                        value={nome}
+                        onChange={(e)=> {setNome(e.target.value)}}
                     />
                 </div>
 
                 <div className='form-email'>
-                    <FormLabel className='label-email'>E-mail</FormLabel>
+                    <FormLabel className='label-email' marginBottom='0'>E-mail</FormLabel>
                     <Input 
-                    boxShadow='s' 
-                    bg="#d7e1f0" 
-                    w="60%" 
-                    display="flex" 
-                    type='email' 
-                    placeholder='Digite seu e-mail'
-                    value={email}
-                    onChange={(e)=> {setEmail(e.target.value)}}
+                        bg="#d7e1f0" 
+                        w="100%" 
+                        display="flex" 
+                        type='email' 
+                        placeholder='Digite seu e-mail'
+                        value={email}
+                        onChange={(e)=> {setEmail(e.target.value)}}
                     />
                 </div>
 
                 <div className='form-number'>
-                    <FormLabel className='label-number'>Número de telefone</FormLabel>
+                    <FormLabel className='label-number' marginBottom='0'>Número de telefone</FormLabel>
                     <Input 
-                    bg="#d7e1f0" 
-                    w="60%"  
-                    type='text'
-                    placeholder='(+55) DDD 98241-0516'
-                    value={number}
-                    onChange={(e)=> {setNumber(e.target.value)}}
+                        bg="#d7e1f0" 
+                        w="100%"  
+                        type='text'
+                        placeholder='(+55) DDD 98241-0516'
+                        value={number}
+                        onChange={(e)=> {setNumber(e.target.value)}}
                     />
                 </div>
 
                 <div className='form-assunto'>
-                    <FormLabel className='label-assunto'>Assunto</FormLabel>
+                    <FormLabel className='label-assunto' marginBottom='0'>Assunto</FormLabel>
+
                     <Textarea 
-                    bg="#d7e1f0" 
-                    w="400px" 
-                    maxH="100%" 
-                    placeholder='Digite o assunto'
-                    value={assunto}
-                    onChange={(e)=> {setAssunto(e.target.value)}}
+                        bg="#d7e1f0" 
+                        w="100%"
+                        placeholder='Digite o assunto'
+                        value={assunto}
+                        onChange={(e)=> {setAssunto(e.target.value)}}
                     />
                 </div>
 
