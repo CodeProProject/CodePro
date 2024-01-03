@@ -1,14 +1,11 @@
-import React, {useState} from 'react'
+import React, {useState, useRef} from 'react'
 import './Contato.css'
 import ImgContato from '../../assets/fundoOrcamento.jpg';
+import emailjs from '@emailjs/browser';
 
 import {
-    FormControl,
     FormLabel,
-    FormErrorMessage,
-    FormHelperText,
     Input,
-    Flex,
     Textarea
   } from '@chakra-ui/react'
 
@@ -18,6 +15,36 @@ const Contato = () => {
     const [email, setEmail] = useState("");
     const [number, setNumber] = useState("");
     const [assunto, setAssunto] = useState(""); 
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+      
+        const templateParams = {
+          to_name: nome, // Nome do destinatário, se aplicável
+          from_name: nome,
+          from_email: email,
+          from_number: number,
+          message: `Assunto da solicitação: ${assunto}`
+        };
+      
+        emailjs
+          .send('service_p8wck0q', 'template_89oigh7', templateParams, '9wA6z0lPvWJJiPcCb')
+          .then(
+            (result) => {
+              setEmail('');
+              setAssunto('');
+              setNumber('');
+              setNome('');
+            },
+            (error) => {
+              console.log(error.text);
+            }
+          );
+      };
+      
+      
+
   return (
     <div className='contato-container'>
         <div className='img-container'>
@@ -26,7 +53,7 @@ const Contato = () => {
 
         <div className='form-container'>
             <h1 className='h1-title-form'>Entre em contato</h1>
-            <div className='formulario'>
+            <form ref={form} onSubmit={sendEmail} className='formulario'>
                 <div className='form-nome'>
                     <FormLabel 
                         className='label-nome' 
@@ -42,6 +69,7 @@ const Contato = () => {
                         type='text'
                         placeholder='Digite seu nome'
                         value={nome}
+                        name="user_name"
                         onChange={(e)=> {setNome(e.target.value)}}
                     />
                 </div>
@@ -55,6 +83,7 @@ const Contato = () => {
                         type='email' 
                         placeholder='Digite seu e-mail'
                         value={email}
+                        name="user_email"
                         onChange={(e)=> {setEmail(e.target.value)}}
                     />
                 </div>
@@ -67,6 +96,7 @@ const Contato = () => {
                         type='text'
                         placeholder='(+55) DDD 98241-0516'
                         value={number}
+                        name="user_number"
                         onChange={(e)=> {setNumber(e.target.value)}}
                     />
                 </div>
@@ -79,12 +109,14 @@ const Contato = () => {
                         w="100%"
                         placeholder='Digite o assunto'
                         value={assunto}
+                        name="message"
+                        
                         onChange={(e)=> {setAssunto(e.target.value)}}
                     />
                 </div>
 
                 <button className='button-enviar'>Enviar</button>
-            </div>
+            </form>
         </div>
     </div>
   )
