@@ -8,7 +8,7 @@ import Alvo from '../../assets/alvo.png';
 
 const Diferencial = () => {
   return (
-    <section className='diferencial-container'>
+    <section id='diferencial' className='diferencial-container'>
         <h1 className='h1-diferencial-title'>Diferencial da CodePro</h1>
         <div className='cards-container-diferencial'>
             <div className='card'>

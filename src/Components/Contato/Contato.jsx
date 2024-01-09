@@ -46,7 +46,7 @@ const Contato = () => {
       
 
   return (
-    <div className='contato-container'>
+    <div id="contato" className='contato-container'>
         <div className='img-container'>
             <img className='img-contato' src={ImgContato} alt="contato-container" />
         </div>
