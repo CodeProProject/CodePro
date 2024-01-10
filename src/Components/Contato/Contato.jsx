@@ -29,7 +29,7 @@ const Contato = () => {
         };
       
         emailjs
-          .send('service_p8wck0q', 'template_89oigh7', templateParams, '9wA6z0lPvWJJiPcCb')
+          .send('service_g69m46e', 'template_uu9rgi6', templateParams, 'T14O-HawSKPIr4_hN')
           .then(
             (result) => {
               setEmail('');
