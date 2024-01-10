@@ -2,6 +2,7 @@ import React, {useState, useRef} from 'react'
 import './Contato.css'
 import ImgContato from '../../assets/fundoOrcamento.jpg';
 import emailjs from '@emailjs/browser';
+import {toast } from 'react-toastify';
 
 import {
     FormLabel,
@@ -32,10 +33,35 @@ const Contato = () => {
           .send('service_g69m46e', 'template_uu9rgi6', templateParams, 'T14O-HawSKPIr4_hN')
           .then(
             (result) => {
-              setEmail('');
-              setAssunto('');
-              setNumber('');
-              setNome('');
+                const resolveAfter3Sec = new Promise(resolve => setTimeout(resolve, 1300));
+                        toast.promise(
+                            resolveAfter3Sec,
+                            {
+                            pending: 'Enviando e-mail',
+                            success: 'E-mail enviado com sucesso!',
+                            error: 'Erro ao enviar o e-mail, tente novamente mais tarde'
+                            }
+                        )
+                setTimeout(() => {
+                    /*toast.success('E-mail enviado com sucesso. Entraremos em contato em breve!', {
+                        position: "top-right",
+                        autoClose: 5000,
+                        hideProgressBar: false,
+                        closeOnClick: true,
+                        pauseOnHover: true,
+                        draggable: true,
+                        progress: undefined,
+                        theme: "dark",
+                        }); */
+                        
+
+                        setEmail('');
+                        setAssunto('');
+                        setNumber('');
+                        setNome('');
+                }, 2000);
+
+              
             },
             (error) => {
               console.log(error.text);
@@ -118,6 +144,8 @@ const Contato = () => {
                 <button className='button-enviar'>Enviar</button>
             </form>
         </div>
+
+        
     </div>
   )
 }
