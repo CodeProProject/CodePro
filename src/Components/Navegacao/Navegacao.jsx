@@ -5,7 +5,7 @@ const Navegacao = () => {
   return (
     <div id='navegacao' className='navegacao-container'>
       <nav className='nav-container'>
-        <p className='font-ptsans font-bold text-3xl text-white cursor-pointer'>C<span className='font-ptsans text-2xl cursor-pointer'>ode</span>P<span className='font-ptsans text-2xl cursor-pointer'>ro</span></p>
+        <p className='font-ptsans font-bold text-2xl text-white cursor-pointer'>C<span className='font-ptsans text-xl cursor-pointer'>ode</span>P<span className='font-ptsans text-xl cursor-pointer'>ro</span></p>
         <ul>
           <li className='li-inicio'><a href="#">Início</a></li>
           <li className='li-sobre'><a href="#sobre">Sobre</a></li>
