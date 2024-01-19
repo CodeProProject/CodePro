@@ -6,13 +6,9 @@ import { ToastContainer } from 'react-toastify';
 function App() {
   return (
     <>
-    
       <Cabecalho />
       
-      
       <MainConteiner />
-      
-  
 
       <Rodape />
 

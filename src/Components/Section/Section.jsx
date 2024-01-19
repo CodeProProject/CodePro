@@ -6,7 +6,10 @@ const Section = () => {
   return (
     <section id='sobre' className='section-container'>
         <div className='container-sobre'>
-            <img src={designOtimizar} className='designExperiencia' />
+            <img 
+              src={designOtimizar} 
+              className='designExperiencia'
+            />
         </div>
 
         <div className='info-texto-container'>
