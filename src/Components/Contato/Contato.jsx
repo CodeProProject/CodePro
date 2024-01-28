@@ -3,6 +3,7 @@ import './Contato.css'
 import ImgContato from '../../assets/fundoOrcamento.jpg';
 import emailjs from '@emailjs/browser';
 import {toast } from 'react-toastify';
+import InputMask from 'react-input-mask';
 
 import {
     FormLabel,
@@ -116,11 +117,14 @@ const Contato = () => {
 
                 <div className='form-number'>
                     <FormLabel className='label-number' marginBottom='0'>Número de telefone</FormLabel>
-                    <Input 
+                    <InputMask 
+                        mask="(99) 99999-9999"
+                        maskChar="_"
                         bg="#d7e1f0" 
                         w="100%"  
                         type='text'
                         placeholder='(+55) DDD 98241-0516'
+                        
                         value={number}
                         name="user_number"
                         onChange={(e)=> {setNumber(e.target.value)}}
